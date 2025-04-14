@@ -1,0 +1,6 @@
+@RBC_EmployeeAPI_POC_HostAddress = http://localhost:5113
+
+GET {{RBC_EmployeeAPI_POC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
