@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="RBC_EmployeeAPI_w_MVC\**" />
+    <Content Remove="RBC_EmployeeAPI_w_MVC\**" />
+    <EmbeddedResource Remove="RBC_EmployeeAPI_w_MVC\**" />
+    <None Remove="RBC_EmployeeAPI_w_MVC\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

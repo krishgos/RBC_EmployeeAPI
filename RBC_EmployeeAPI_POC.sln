@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBC_EmployeeAPI_POC", "RBC_EmployeeAPI_POC.csproj", "{65AD69D7-3BC1-4141-AB02-BDC30AF72B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBC_EmployeeAPI_w_MVC", "..\RBC_EmployeeAPI_w_MVC\RBC_EmployeeAPI_w_MVC.csproj", "{5C49A204-AA13-4A3C-9E03-B60011C76272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBC_EmployeeAPI_w_MVC", "RBC_EmployeeAPI_w_MVC\RBC_EmployeeAPI_w_MVC.csproj", "{D3EB10D6-FA51-42B9-AB17-FDAF22ECD367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{65AD69D7-3BC1-4141-AB02-BDC30AF72B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65AD69D7-3BC1-4141-AB02-BDC30AF72B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65AD69D7-3BC1-4141-AB02-BDC30AF72B73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C49A204-AA13-4A3C-9E03-B60011C76272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C49A204-AA13-4A3C-9E03-B60011C76272}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C49A204-AA13-4A3C-9E03-B60011C76272}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C49A204-AA13-4A3C-9E03-B60011C76272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3EB10D6-FA51-42B9-AB17-FDAF22ECD367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3EB10D6-FA51-42B9-AB17-FDAF22ECD367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3EB10D6-FA51-42B9-AB17-FDAF22ECD367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3EB10D6-FA51-42B9-AB17-FDAF22ECD367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
