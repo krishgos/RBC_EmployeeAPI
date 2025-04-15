@@ -12,6 +12,6 @@ namespace RBC_EmployeeAPI_POC.Models
         public decimal HourlyRate { get; set; }
         public double HoursWorked { get; set; }
         [Column(TypeName = "decimal(8, 2)")]
-        public decimal TotalPay { get; set; }
+        public decimal TotalPay => HourlyRate * (decimal)HoursWorked;
     }
 }

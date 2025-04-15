@@ -59,20 +59,8 @@ app.MapGet($"{BASEURL}/page", async (DataContext data, [FromQuery] int page = 1,
     return Results.Ok(employees);
 });
 
-//app.MapPost(BASEURL, async (HttpContext context, DataContext data) =>
-//{
-//    Employee? emp = await JsonSerializer.DeserializeAsync<Employee>(context.Request.Body);
-//    if (emp != null)
-//    {
-//        await data.AddAsync(emp);
-//        await data.SaveChangesAsync();
-//        context.Response.StatusCode = StatusCodes.Status200OK;
-//    }
-//});
-
 app.MapPost(BASEURL, async ([FromBody] Employee employee, DataContext data) =>
-{
-    employee.TotalPay =(decimal)employee.HourlyRate * (decimal)employee.HoursWorked;
+{    
     data.Employees.Add(employee);
     await data.SaveChangesAsync();
     return Results.Created($"{BASEURL}/{employee.EmployeeNumber}", employee);
@@ -85,8 +73,7 @@ app.MapPut($"{BASEURL}/{{employeeNumber}}", async (int employeeNumber, [FromBody
 
     employee.EmployeeName = updated.EmployeeName;
     employee.HourlyRate = updated.HourlyRate;
-    employee.HoursWorked = updated.HoursWorked;
-    employee.TotalPay = (decimal)updated.HourlyRate * (decimal)updated.HoursWorked;
+    employee.HoursWorked = updated.HoursWorked; 
 
     await data.SaveChangesAsync();
     return Results.Ok(employee);
