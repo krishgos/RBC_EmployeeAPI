@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RBC_EmployeeAPI_POC.Models;
+using Serilog;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,15 @@ builder.Services.AddDbContext<DataContext>(opts => {
     "ConnectionStrings:EmployeeConnection"]);
     opts.EnableSensitiveDataLogging(true);
 });
+
+// Setup Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/employee-api-log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 
 // Add services to the container.
 
